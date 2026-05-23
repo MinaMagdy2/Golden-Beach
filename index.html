@@ -36,9 +36,7 @@
     </div>
 
     <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="." class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
+     
     </div>
 
 <script src="_framework/blazor.webassembly.958z1vx7fr.js" autostart="false"></script>
@@ -46,7 +44,7 @@
         Blazor.start({
             loadBootResource: function (type, name, defaultUri, integrity) {
                 const resources = {
-                    "dotnet.js": "_framework/dotnet.4kbhtraj4u.js",
+                    "dotnet.js": "_framework/dotnet.e0vr9exqce.js",
                     "dotnet.native.wasm": "_framework/dotnet.native.f749u69f30.wasm",
                     "dotnet.native.js": "_framework/dotnet.native.rjbmzc4jpg.js",
                     "dotnet.runtime.js": "_framework/dotnet.runtime.r2kbxkuujc.js"
@@ -143,6 +141,16 @@
         });
         };
     </script>
+    <script>
+    function closeNavbar() {
+        var navbar = document.getElementById('mainNavbar');
+        if (navbar.classList.contains('show')) {
+            // إغلاق قائمة بوتستراب
+            var bsCollapse = new bootstrap.Collapse(navbar, { toggle: true });
+            bsCollapse.hide();
+        }
+    }
+</script>
 
 </body>
 

@@ -1,0 +1,83 @@
+﻿(function ($) {
+    $(function () {
+
+        $("#ulMenu").setNavigationActiveItem("active", []);
+
+        initializeToastr();
+
+        $('.popup-with-form').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        });
+
+        $('.date-picker').datetimepicker({
+            minDate: new Date(),
+            format: 'DD MMM YYYY'
+        });
+        $("#btnBooking").on('click', function () {
+            var path = $("#inptBookingPageUrl").val();
+            path += "?arrival=";
+            path += $("#inptArrivalDate").val();
+            path += "&departure=";
+            path += $("#inptDepartureDate").val();
+            path += "&adults=";
+            path += $("#inptAdults").val();
+            path += "&children=";
+            path += $("#inptChildren").val();
+            document.location.href = path;
+        });
+
+        //$('.image-popup').initializeImagePopUp();
+        //$('.video-popup').initializeVideoPopUp();
+
+        //TODO: put application specific UI function calls here
+        //Example: initialize owl carousels, galleris, validation, etc.
+
+
+    });
+
+    /*============================ Toastr Configuration ===============================*/
+    function initializeToastr() {
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": 0,
+            "extendedTimeOut": 0,
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut",
+            "tapToDismiss": false
+        }
+    };
+}($))
+
+
+var recaptchaSolved = false;
+function setRecaptchaSolved() {
+    recaptchaSolved = true;
+}
+function ValidateRecaptcha() {
+    if (recaptchaSolved)
+        return true;
+    $('.g-recaptcha').validationEngine('showPrompt', $("#hfCaptchaErrorSystemMessage").val(), 'error', 'topLeft', true);
+    return false;
+}

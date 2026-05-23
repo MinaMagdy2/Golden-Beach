@@ -1,0 +1,499 @@
+h1:focus {
+    outline: none;
+}
+html, body {
+    overflow-x: hidden; /* بيمنع السكرول العرضي تماماً */
+    width: 100%;
+}
+
+/* لو عندك row، اتأكد إنه مش بياخد مارجن إضافي */
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+/*.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid #e50000;
+}
+
+.validation-message {
+    color: #e50000;
+}
+
+.blazor-error-boundary {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJoaWRkZW4iPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDAiPjxyZWN0IHg9IjIzNSIgeT0iNTEiIHdpZHRoPSI1NiIgaGVpZ2h0PSI0OSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzUgLTUxKSI+PHBhdGggZD0iTTI2My41MDYgNTFDMjY0LjcxNyA1MSAyNjUuODEzIDUxLjQ4MzcgMjY2LjYwNiA1Mi4yNjU4TDI2Ny4wNTIgNTIuNzk4NyAyNjcuNTM5IDUzLjYyODMgMjkwLjE4NSA5Mi4xODMxIDI5MC41NDUgOTIuNzk1IDI5MC42NTYgOTIuOTk2QzI5MC44NzcgOTMuNTEzIDI5MSA5NC4wODE1IDI5MSA5NC42NzgyIDI5MSA5Ny4wNjUxIDI4OS4wMzggOTkgMjg2LjYxNyA5OUwyNDAuMzgzIDk5QzIzNy45NjMgOTkgMjM2IDk3LjA2NTEgMjM2IDk0LjY3ODIgMjM2IDk0LjM3OTkgMjM2LjAzMSA5NC4wODg2IDIzNi4wODkgOTMuODA3MkwyMzYuMzM4IDkzLjAxNjIgMjM2Ljg1OCA5Mi4xMzE0IDI1OS40NzMgNTMuNjI5NCAyNTkuOTYxIDUyLjc5ODUgMjYwLjQwNyA1Mi4yNjU4QzI2MS4yIDUxLjQ4MzcgMjYyLjI5NiA1MSAyNjMuNTA2IDUxWk0yNjMuNTg2IDY2LjAxODNDMjYwLjczNyA2Ni4wMTgzIDI1OS4zMTMgNjcuMTI0NSAyNTkuMzEzIDY5LjMzNyAyNTkuMzEzIDY5LjYxMDIgMjU5LjMzMiA2OS44NjA4IDI1OS4zNzEgNzAuMDg4N0wyNjEuNzk1IDg0LjAxNjEgMjY1LjM4IDg0LjAxNjEgMjY3LjgyMSA2OS43NDc1QzI2Ny44NiA2OS43MzA5IDI2Ny44NzkgNjkuNTg3NyAyNjcuODc5IDY5LjMxNzkgMjY3Ljg3OSA2Ny4xMTgyIDI2Ni40NDggNjYuMDE4MyAyNjMuNTg2IDY2LjAxODNaTTI2My41NzYgODYuMDU0N0MyNjEuMDQ5IDg2LjA1NDcgMjU5Ljc4NiA4Ny4zMDA1IDI1OS43ODYgODkuNzkyMSAyNTkuNzg2IDkyLjI4MzcgMjYxLjA0OSA5My41Mjk1IDI2My41NzYgOTMuNTI5NSAyNjYuMTE2IDkzLjUyOTUgMjY3LjM4NyA5Mi4yODM3IDI2Ny4zODcgODkuNzkyMSAyNjcuMzg3IDg3LjMwMDUgMjY2LjExNiA4Ni4wNTQ3IDI2My41NzYgODYuMDU0N1oiIGZpbGw9IiNGRkU1MDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=) no-repeat 1rem/1.8rem, #b32121;
+    padding: 1rem 1rem 1rem 3.7rem;
+    color: white;
+}
+
+    .blazor-error-boundary::after {
+        content: "An error has occurred."
+    }
+
+.darker-border-checkbox.form-check-input {
+    border-color: #929292;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}*/
+/* إخفاء شاشة التحميل تماماً */
+.loading-progress {
+    display: none !important;
+}
+
+.loading-progress-text {
+    display: none !important;
+}
+/* ==========================================================================
+   Golden Beach Resort - Custom Luxury Style
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,500;0,600;1,500&display=swap');
+
+:root {
+    --primary-blue: #041235; /* الأزرق الداكن الملكي من اللوجو */
+    --accent-gold: #C5A353; /* الذهبي المطفأ الفخم */
+    --brand-green: #219653; /* الأخضر للنخلة */
+    --bg-light: #f8fafb;
+    --text-dark: #191c1d;
+    --text-muted: #45464e;
+    --radius-premium: 16px;
+    --radius-pill: 50px;
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* تخصيص الخطوط الفخمة للعناوين */
+h1, h2, .font-serif {
+    font-family: 'Noto Serif', serif;
+    font-weight: 500;
+}
+
+/* تخصيص البار العلوي */
+.custom-navbar {
+    background-color: rgba(248, 250, 251, 0.85) !important;
+    backdrop-filter: blur(15px);
+    border-b: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition-smooth);
+}
+/* بدل .custom-navbar العادية خليها تاخد الوضع ده */
+.custom-navbar {
+    position: fixed !important; /* تثبيت مطلق */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    /* ده اللي بيمنع "الرعشة" أو الشكل الغريب عند التبديل */
+    will-change: transform;
+    transition: all 0.3s ease-in-out;
+}
+
+/* عشان الـ content اللي تحت الـ navbar ميتغطيش */
+body {
+    padding-top: 70px; /* أو حسب طول الـ navbar عندك */
+}
+
+    .custom-navbar .nav-link {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-muted);
+        transition: var(--transition-smooth);
+    }
+
+        .custom-navbar .nav-link:hover, .custom-navbar .nav-link.active {
+            color: var(--accent-gold) !important;
+        }
+
+/* الأزرار الفاخرة */
+.btn-premium-gold {
+    background-color: var(--accent-gold) !important;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 28px;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+    .btn-premium-gold:hover {
+        background-color: var(--primary-blue) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(197, 163, 83, 0.25);
+    }
+
+.btn-premium-outline {
+    background: transparent;
+    border: 1.5px solid var(--primary-blue);
+    color: var(--primary-blue);
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+    .btn-premium-outline:hover {
+        background-color: var(--primary-blue);
+        color: #ffffff;
+        transform: translateY(-2px);
+    }
+/* الزر الأساسي (ذهبي فخم) */
+.btn-green-outline {
+    border: 2px solid var(--brand-green);
+    color: var(--brand-green);
+    padding: 10px 30px;
+    border-radius: var(--radius-pill);
+    transition: var(--transition-smooth);
+}
+
+    /* التغيير عند الوقوف بالماوس (يقلب أخضر) */
+    .btn-green-outline:hover {
+        background-color: var(--brand-green);
+        border-color: var(--brand-green);
+        color: #fff; /* النص بيبقى أبيض عشان الأخضر غامق شوية */
+        box-shadow: 0 5px 15px rgba(33, 150, 83, 0.3); /* ظل أخضر خفيف للفخامة */
+    }
+/* منطقة الـ Hero البانورامية */
+/* منطقة الـ Hero البانورامية - التعديل الجديد للصورة الصيفية الواسعة */
+.hero-wrapper {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    /* خففنا التعتيم جداً (0.3 و 0.2) عشان ألوان السما والمية الزرقاء تنطق وتفضل حية */
+    background: linear-gradient(rgba(4, 18, 53, 0.3), rgba(4, 18, 53, 0.2)), url('2.jpeg') no-repeat center center/cover;
+}
+
+    /* الظل هنا ممتاز وهيفضل شغال عشان يخلي الحروف البيضاء بارزة ومقروءة فوق السحاب */
+    .hero-wrapper h1, .hero-wrapper p, .hero-wrapper span {
+        text-shadow: 0 2px 12px rgba(4, 18, 53, 0.6); /* خليت الظل كحلي داكن عشان يتماشى مع الـ Theme */
+    }/* شريط الحجز الكبسولة (The Luxury Widget) */
+.glass-booking-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: var(--radius-pill);
+    padding: 12px 32px;
+    box-shadow: 0 20px 40px rgba(4, 18, 53, 0.08);
+}
+
+.booking-field {
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0 20px;
+}
+
+    .booking-field:last-child {
+        border-right: none;
+    }
+
+    .booking-field label {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--text-muted);
+        margin-bottom: 2px;
+    }
+
+    .booking-field input, .booking-field select {
+        border: none;
+        background: transparent;
+        font-weight: 700;
+        color: var(--primary-blue);
+        padding: 0;
+        width: 100%;
+    }
+
+        .booking-field input:focus, .booking-field select:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+/* كروت الغرف الفاخرة */
+.room-premium-card {
+    background: #ffffff;
+    border-radius: var(--radius-premium);
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    transition: var(--transition-smooth);
+}
+
+    .room-premium-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(4, 18, 53, 0.08);
+    }
+
+.room-card-img-wrapper {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .room-card-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition-smooth);
+    }
+
+.room-premium-card:hover .room-card-img-wrapper img {
+    transform: scale(1.06);
+}
+
+/* سيكشن المرافق */
+.amenity-box {
+    background: #ffffff;
+    border-radius: var(--radius-premium);
+    padding: 40px 24px;
+    transition: var(--transition-smooth);
+    border: none;
+}
+
+    .amenity-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(4, 18, 53, 0.06);
+    }
+
+.amenity-icon-circle {
+    width: 64px;
+    height: 64px;
+    /* هنا غيرنا الخلفية والأيقونة لتكون باللون الأخضر الملكي للنخلة */
+    background-color: rgba(33, 150, 83, 0.1);
+    color: var(--brand-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    font-size: 28px;
+}
+/* قسم الأرقام والـ Layout الكحلي */
+.bg-navy-luxury {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+}
+
+.luxury-number-circle {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(197, 163, 83, 0.4);
+    color: var(--accent-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* خط تزييني أسفل العناوين */
+.luxury-title-line {
+    width: 60px;
+    height: 3px;
+    background-color: var(--brand-green);
+    margin: 16px auto 0;
+    border-radius: 2px;
+}
+
+/* سيكشن التقييمات */
+.testimonial-card {
+    background: #ffffff;
+    border-radius: var(--radius-premium);
+    padding: 40px;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+/* تجاوب مع الموبايل لشريط الحجز */
+@media (max-width: 991.98px) {
+    .glass-booking-card {
+        border-radius: var(--radius-premium);
+        padding: 24px;
+    }
+
+    .booking-field {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 12px 0;
+    }
+}
+/* إخفاء العناصر مؤقتاً لحد ما نعمل scroll ونوصل لها */
+.reveal-on-scroll {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.nav-hotel-logo {
+    /* الارتفاع الأساسي */
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    /* بناكل الفراغات اللي فوق وتحت */
+    margin-top: -35px;
+    margin-bottom: -35px;
+    /* التريكة الجديدة: دي اللي هتكبر اللوجو "بصرياً" جداً */
+    /* لو حسه لسه صغير، خلي الـ 1.3 دي 1.4 أو 1.5 براحتك */
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+    /* حركة الماوس */
+    .nav-hotel-logo:hover {
+        /* بيكبر سنة زيادة لما تقف عليه */
+        transform: scale(1.5);
+    }
+/* ==========================================================================
+   إضافة للحركة الاحترافية للكروت (Stacking Cards)
+   ========================================================================== */
+
+/* الحركة دي هتشتغل فقط في الموبايل والتابلت الصغير */
+/*@media (max-width: 767px) {
+    .mobile-stack {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .mobile-stack .col-12 {
+            height: 100vh;  كل كارت ياخد طول الشاشة عشان يظهر لوحده 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+        }
+
+    .room-premium-card {
+        transition: opacity 0.6s ease, transform 0.6s ease;
+        opacity: 0;  
+        transform: translateY(50px);
+    }
+
+        .room-premium-card.is-visible {
+            opacity: 1;  
+            transform: translateY(0);
+        }
+}*/
+@media (max-width: 767px) {
+    .mobile-stack .col-12 {
+        opacity: 1; /* الكارت ظاهر */
+        filter: blur(0px);
+        transition: opacity 0.5s ease, filter 0.5s ease;
+    }
+
+        /* ده الكلاس اللي بيتحط لما تعدي الربع */
+        .mobile-stack .col-12.is-faded {
+            opacity: 0.3; /* شفافية خفيفة */
+            filter: blur(2px); /* زغللة خفيفة */
+        }
+}
+.amenity-img-wrapper img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff; /* عشان تبان كأنها لوحة فنية */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease;
+}
+
+.amenity-box:hover img {
+    transform: scale(1.05); /* حركة خفيفة عند الوقوف عليها */
+}
+@media (max-width: 767px) {
+    .hero-wrapper {
+        min-height: 90vh; /* تصغير الطول في الموبايل */
+        padding-top: 50px; /* دفع الكلام لأسفل قليلاً ليكون متوازناً */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* الكلام يبدأ من فوق */
+    }
+
+        /* نرفع الـ BookingWidget ليصبح جزءاً من التكوين وليس خارج الصندوق */
+        .hero-wrapper .position-absolute {
+            position: relative !important; /* نلغي الـ absolute في الموبايل */
+            bottom: auto;
+            transform: none !important;
+            margin-top: 30px; /* مسافة بين الكلام والـ Widget */
+            width: 95% !important; /* ليكون شكله مريح للعين */
+        }
+}
+.amenity-box h4 {
+    padding-top:15px;
+    transition: var(--transition-smooth);
+}
+
+.amenity-box:hover h4 {
+    color: var(--brand-green) !important; /* لمسة خضراء هادية */
+}
+
+/* الزرار النشط: واخد نفس أخضر اللوجو الفاتح المبهج */
+.custom-green-active {
+    background-color: var(--brand-green) !important; /* درجة الأخضر الفاتحة المأخوذة من اللوجو */
+    border-color: var(--brand-green) !important;
+}
+
+/* الأزرار غير النشطة: خلفية رمادية فاتحة هادية جداً عشان تبرز الأخضر */
+.custom-green-inactive {
+    background-color: #f2f4f5 !important;
+    color: #45464e !important;
+    border: none !important;
+}
+
+    /* تأثير الـ Hover: يقلب للدرجة الخضراء بنسبة خفيفة عند الوقوف عليه */
+    .custom-green-inactive:hover {
+        background-color: #e2f0b5 !important; /* خلفية خضراء فاتحة جداً عند الـ Hover */
+        color: #557005 !important;
+    }
+
+/* تظبيط السكرول للموبايل */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media (max-width: 767.98px) {
+    .flex-col {
+        flex-direction: column !important;
+    }
+}
+/* كبسولة زجاجية داكنة فاخرة تطابق التصميم المرفق */
+.glass-dark-capsule {
+    background: rgba(25, 28, 29, 0.45) !important; /* رمادي داكن شفاف جداً لتمرير الضوء */
+    backdrop-filter: blur(25px) saturate(160%); /* غباش قوي مع زيادة تشبع الألوان الخلفية */
+    -webkit-backdrop-filter: blur(25px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important; /* بوردر نحيف جداً أشبه بالكريستال */
+}
+#panorama-viewer {
+    border: none;
+    background-color: #f8f9fa;
+}
+
+/* ستايل الصور المصغرة والتفاعل معاها */
+.thumbnail-hover {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .thumbnail-hover:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(4, 12, 53, 0.15);
+    }
+
+.object-fit-cover {
+    object-fit: cover !important;
+}
